@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D46D6A</color>
+    <color name="colorPrimaryDark">#AA3C39</color>
+    <color name="colorAccent">#FFACAA</color>
+    <color name="p0Primary">#d42a52</color>
+    <color name="p0PrimaryDark">#f07994</color>
+    <color name="p0Accent">#8C0021</color>
+    <color name="p1Primary">#fbac1e</color>
+    <color name="p1PrimaryDark">#a46a00</color>
+    <color name="p1Accent">#ffcd73</color>
+    <color name="p2Primary">#FAE989</color>
+    <color name="p2PrimaryDark">#AF9C2F</color>
+    <color name="p2Accent">#FFF9D6</color>
+    <color name="p3Primary">#63bd59</color>
+    <color name="p3PrimaryDark">#25821B</color>
+    <color name="p3Accent">#BBEAB6</color>
+    <color name="p4Primary">#68a8ab</color>
+    <color name="p4PrimaryDark">#267275</color>
+    <color name="p4Accent">#D0EBEC</color>
+    <color name="p5Primary">#4899C9</color>
+    <color name="p5PrimaryDark">#0969A1</color>
+    <color name="p5Accent">#9ECFEC</color>
+    <color name="p6Primary">#697EBB</color>
+    <color name="p6PrimaryDark">#2E468D</color>
+    <color name="p6Accent">#C6D0EE</color>
+    <color name="p7Primary">#A088C0</color>
+    <color name="p7PrimaryDark">#593984</color>
+    <color name="p7Accent">#E9E2F3</color>
+    <color name="p8Primary">#905EA8</color>
+    <color name="p8PrimaryDark">#5D2378</color>
+    <color name="p8Accent">#DAC1E6</color>
+    <color name="p9Primary">#EA4096</color>
+    <color name="p9PrimaryDark">#D7006D</color>
+    <color name="p9Accent">#F796C7</color>
+</resources>

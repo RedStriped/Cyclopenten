@@ -1,0 +1,237 @@
+<resources>
+    <string name="app_name">Cyclopenten</string>
+    <string name="Q1">Name the chemical element</string>
+
+    <string name="A_cesium">cesium</string>
+    <string name="A_francium">francium</string>
+    <string name="A_lithium">lithium</string>
+    <string name="A_potassium">potassium</string>
+    <string name="A_rubidium">rubidium</string>
+    <string name="A_sodium">sodium</string>
+    <string name="A_barium">barium</string>
+    <string name="A_beryllium">beryllium</string>
+    <string name="A_calcium">calcium</string>
+    <string name="A_magnesium">magnesium</string>
+    <string name="A_radium">radium</string>
+    <string name="A_strontium">strontium</string>
+    <string name="A_bohrium">bohrium</string>
+    <string name="A_cadmium">cadmium</string>
+    <string name="A_chromium">chromium</string>
+    <string name="A_cobalt">cobalt</string>
+    <string name="A_copernicium">copernicium</string>
+    <string name="A_copper">copper</string>
+    <string name="A_darmstadtium">darmstadtium</string>
+    <string name="A_dubnium">dubnium</string>
+    <string name="A_gold">gold</string>
+    <string name="A_hafnium">hafnium</string>
+    <string name="A_hassium">hassium</string>
+    <string name="A_iridium">iridium</string>
+    <string name="A_iron">iron</string>
+    <string name="A_manganese">manganese</string>
+    <string name="A_meitnerium">meitnerium</string>
+    <string name="A_mercury">mercury</string>
+    <string name="A_molybdenum">molybdenum</string>
+    <string name="A_nickel">nickel</string>
+    <string name="A_niobium">niobium</string>
+    <string name="A_osmium">osmium</string>
+    <string name="A_palladium">palladium</string>
+    <string name="A_platinum">platinum</string>
+    <string name="A_rhenium">rhenium</string>
+    <string name="A_rhodium">rhodium</string>
+    <string name="A_roentgenium">roentgenium</string>
+    <string name="A_ruthenium">ruthenium</string>
+    <string name="A_rutherfordium">rutherfordium</string>
+    <string name="A_scandium">scandium</string>
+    <string name="A_seaborgium">seaborgium</string>
+    <string name="A_silver">silver</string>
+    <string name="A_tantalum">tantalum</string>
+    <string name="A_technetium">technetium</string>
+    <string name="A_titanium">titanium</string>
+    <string name="A_tungsten">tungsten</string>
+    <string name="A_vanadium">vanadium</string>
+    <string name="A_yttrium">yttrium</string>
+    <string name="A_zinc">zinc</string>
+    <string name="A_zirconium">zirconium</string>
+    <string name="A_aluminum">aluminum</string>
+    <string name="A_bismuth">bismuth</string>
+    <string name="A_flerovium">flerovium</string>
+    <string name="A_gallium">gallium</string>
+    <string name="A_indium">indium</string>
+    <string name="A_lead">lead</string>
+    <string name="A_livermorium">livermorium</string>
+    <string name="A_thallium">thallium</string>
+    <string name="A_tin">tin</string>
+    <string name="A_ununpentium">ununpentium</string>
+    <string name="A_ununtrium">ununtrium</string>
+    <string name="A_antimony">antimony</string>
+    <string name="A_arsenic">arsenic</string>
+    <string name="A_boron">boron</string>
+    <string name="A_germanium">germanium</string>
+    <string name="A_polonium">polonium</string>
+    <string name="A_silicon">silicon</string>
+    <string name="A_tellurium">tellurium</string>
+    <string name="A_carbon">carbon</string>
+    <string name="A_hydrogen">hydrogen</string>
+    <string name="A_nitrogen">nitrogen</string>
+    <string name="A_oxygen">oxygen</string>
+    <string name="A_phosphorus">phosphorus</string>
+    <string name="A_selenium">selenium</string>
+    <string name="A_sulfur">sulfur</string>
+    <string name="A_astatine">astatine</string>
+    <string name="A_bromine">bromine</string>
+    <string name="A_chlorine">chlorine</string>
+    <string name="A_fluorine">fluorine</string>
+    <string name="A_iodine">iodine</string>
+    <string name="A_ununseptium">ununseptium</string>
+    <string name="A_argon">argon</string>
+    <string name="A_helium">helium</string>
+    <string name="A_krypton">krypton</string>
+    <string name="A_neon">neon</string>
+    <string name="A_radon">radon</string>
+    <string name="A_ununoctium">ununoctium</string>
+    <string name="A_xenon">xenon</string>
+    <string name="A_cerium">cerium</string>
+    <string name="A_dysprosium">dysprosium</string>
+    <string name="A_erbium">erbium</string>
+    <string name="A_europium">europium</string>
+    <string name="A_gadolinium">gadolinium</string>
+    <string name="A_holmium">holmium</string>
+    <string name="A_lanthanum">lanthanum</string>
+    <string name="A_lutetium">lutetium</string>
+    <string name="A_neodymium">neodymium</string>
+    <string name="A_praseodymium">praseodymium</string>
+    <string name="A_promethium">promethium</string>
+    <string name="A_samarium">samarium</string>
+    <string name="A_terbium">terbium</string>
+    <string name="A_thulium">thulium</string>
+    <string name="A_ytterbium">ytterbium</string>
+    <string name="A_actinium">actinium</string>
+    <string name="A_americium">americium</string>
+    <string name="A_berkelium">berkelium</string>
+    <string name="A_californium">californium</string>
+    <string name="A_curium">curium</string>
+    <string name="A_einsteinium">einsteinium</string>
+    <string name="A_fermium">fermium</string>
+    <string name="A_lawrencium">lawrencium</string>
+    <string name="A_mendelevium">mendelevium</string>
+    <string name="A_neptunium">neptunium</string>
+    <string name="A_nobelium">nobelium</string>
+    <string name="A_plutonium">plutonium</string>
+    <string name="A_protactinium">protactinium</string>
+    <string name="A_thorium">thorium</string>
+    <string name="A_uranium">uranium</string>
+
+    <string-array name="Qs">
+        <item>p_0_cesium</item>
+        <item>p_0_francium</item>
+        <item>p_0_lithium</item>
+        <item>p_0_potassium</item>
+        <item>p_0_rubidium</item>
+        <item>p_0_sodium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
