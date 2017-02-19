@@ -16,11 +16,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
-        android:textColor="#440027"
+        android:textColor="@color/p0Accent"
         android:textSize="30dp"
         android:layout_marginTop="20dp"
         android:text="@string/Q1"/>
-
     <ImageView
         android:layout_width="270px"
         android:layout_height="270px"
@@ -32,53 +31,74 @@
         android:layout_centerVertical="true"
         android:layout_weight="0.01"/>
 
-    <Button
-        android:id="@+id/answerButton1"
+    <LinearLayout
+        android:id="@+id/buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.01"
-        android:layout_marginTop="5dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
-        android:background="@color/p0Accent"
-        android:text="@string/A_actinium"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:background="@color/p0Accent"
+            android:onClick="onSubmitClick"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:background="@color/p0Accent"
+            android:onClick="onSubmitClick"/>
 
-    <Button
-        android:id="@+id/answerButton2"
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttons2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.01"
-        android:layout_marginTop="2dp"
-        android:layout_below="@+id/answerButton1"
-        android:layout_centerHorizontal="true"
-        android:background="@color/p0Accent"
-        android:text="@string/A_actinium"/>
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/answerButton3"
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:background="@color/p0Accent"
+            android:onClick="onSubmitClick"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:background="@color/p0Accent"
+            android:onClick="onSubmitClick"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/tickcross"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/yes"/>
+    <TextView
+        android:id="@+id/correctornot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.01"
-        android:layout_marginTop="2dp"
-        android:layout_below="@+id/answerButton2"
-        android:layout_centerHorizontal="true"
-        android:background="@color/p0Accent"
-        android:text="@string/A_actinium"/>
-
-    <Button
-        android:id="@+id/answerButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.01"
-        android:layout_marginTop="2dp"
-        android:layout_below="@+id/answerButton3"
-        android:layout_centerHorizontal="true"
-        android:background="@color/p0Accent"
-        android:text="@string/A_actinium"/>
-
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/p0Accent"
+        android:text="CORRECT!"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
 </LinearLayout>
