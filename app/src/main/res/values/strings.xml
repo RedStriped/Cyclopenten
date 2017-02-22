@@ -241,4 +241,598 @@
         <item>p_9_thorium</item>
         <item>p_9_uranium</item>
     </string-array>
+
+
+    <string-array name="As">
+        <item>cesium</item>
+        <item>calcium</item>
+        <item>cerium</item>
+        <item>cesanite</item>
+
+        <item>francium</item>
+        <item>france</item>
+        <item>fluorine</item>
+        <item>feminine</item>
+
+        <item>lithium</item>
+        <item>lutetium</item>
+        <item>lawrencium</item>
+        <item>lithiotanite</item>
+
+        <item>potassium</item>
+        <item>krypton</item>
+        <item>krupkaite</item>
+        <item>potassiccarpholite</item>
+
+        <item>rubidium</item>
+        <item>rubicon</item>
+        <item>rhenium</item>
+        <item>rubicund</item>
+
+        <item>sodium</item>
+        <item>samarium</item>
+        <item>natron</item>
+        <item>nioaka</item>
+
+        <item>barium</item>
+        <item>baryllium</item>
+        <item>bramine</item>
+        <item>bahrium</item>
+
+        <item>beryllium</item>
+        <item>bismuth</item>
+        <item>berkelium</item>
+        <item>berode</item>
+
+        <item>calcium</item>
+        <item>calcitonin</item>
+        <item>calamus</item>
+        <item>californium</item>
+
+        <item>magnesium</item>
+        <item>manganese</item>
+        <item>magnesite</item>
+        <item>magnetismus</item>
+
+        <item>radium</item>
+        <item>radish</item>
+        <item>radome</item>
+        <item>radon</item>
+
+        <item>strontium</item>
+        <item>sulfur</item>
+        <item>silver</item>
+        <item>sodium</item>
+
+        <item>bohrium</item>
+        <item>bismuth</item>
+        <item>bharal</item>
+        <item>bhutan</item>
+
+        <item>cadmium</item>
+        <item>cadiac</item>
+        <item>cardinol</item>
+        <item>carbon</item>
+
+        <item>chromium</item>
+        <item>chrome</item>
+        <item>cerium</item>
+        <item>copper</item>
+
+        <item>cobalt</item>
+        <item>copper</item>
+        <item>chromium</item>
+        <item>chlorine</item>
+
+        <item>copernicium</item>
+        <item>californium</item>
+        <item>chlorine</item>
+        <item>coinium</item>
+
+        <item>copper</item>
+        <item>curium</item>
+        <item>calcium</item>
+        <item>cucumber</item>
+
+        <item>darmstadtium</item>
+        <item>dysprosium</item>
+        <item>dysplasia</item>
+        <item>duckweed</item>
+
+        <item>dubnium</item>
+        <item>decibel</item>
+        <item>dublin</item>
+        <item>dubinin</item>
+
+        <item>gold</item>
+        <item>aluminium</item>
+        <item>americium</item>
+        <item>gadolinium</item>
+
+        <item>hafnium</item>
+        <item>hafnon</item>
+        <item>hefnium</item>
+        <item>hoofnium</item>
+
+        <item>hassium</item>
+        <item>hasnium</item>
+        <item>haselnon</item>
+        <item>haselnium</item>
+
+        <item>iridium</item>
+        <item>iron</item>
+        <item>illustratium</item>
+        <item>immernion</item>
+
+        <item>iron</item>
+        <item>fermium</item>
+        <item>indium</item>
+        <item>feathon</item>
+
+        <item>manganese</item>
+        <item>magnesium</item>
+        <item>meitnerium</item>
+        <item>molybdenum</item>
+
+        <item>meitnerium</item>
+        <item>malnutrium</item>
+        <item>manifeston</item>
+        <item>manzantion</item>
+
+        <item>mercury</item>
+        <item>hydrogen</item>
+        <item>haulage</item>
+        <item>heritagon</item>
+
+        <item>molybdenum</item>
+        <item>malocclusion</item>
+        <item>manifoldium</item>
+        <item>manor</item>
+
+        <item>nickel</item>
+        <item>niobium</item>
+        <item>nitrox</item>
+        <item>niue</item>
+
+        <item>niobium</item>
+        <item>niobit</item>
+        <item>newbrontium</item>
+        <item>nibblit</item>
+
+        <item>osmium</item>
+        <item>omissiom</item>
+        <item>orchestrium</item>
+        <item>osmonem</item>
+
+        <item>palladium</item>
+        <item>pladinum</item>
+        <item>praseodymium</item>
+        <item>phd</item>
+
+        <item>platinum</item>
+        <item>plutonium</item>
+        <item>potassium</item>
+        <item>protactinium</item>
+
+        <item>rhenium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>rhodium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>roentgenium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>ruthenium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>rutherfordium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>scandium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>seaborgium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>silver</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>tantalum</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>technetium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>titanium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>tungsten</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>vanadium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>yttrium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>zinc</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>zirconium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>aluminum</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>bismuth</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>flerovium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>gallium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>indium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>lead</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>livermorium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>thallium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>tin</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>ununpentium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>ununtrium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>antimony</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>arsenic</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>boron</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>germanium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>polonium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>silicon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>tellurium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>carbon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>hydrogen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>nitrogen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>oxygen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>phosphorus</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>selenium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>sulfur</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>astatine</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>bromine</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>chlorine</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>fluorine</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>iodine</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>ununseptium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>argon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>helium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>krypton</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>neon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>radon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>ununoctium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>xenon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>cerium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>dysprosium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>erbium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>europium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>gadolinium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>holmium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>lanthanum</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>lutetium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>neodymium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>praseodymium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>promethium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>samarium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>terbium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>thulium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>ytterbium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>actinium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>americium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>berkelium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>californium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>curium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>einsteinium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>fermium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>lawrencium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>mendelevium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>neptunium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>nobelium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>plutonium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>protactinium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>thorium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+        <item>uranium</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
 </resources>

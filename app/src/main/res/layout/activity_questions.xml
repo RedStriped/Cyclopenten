@@ -13,6 +13,7 @@
     tools:context="com.redstriped.cyclopenten.questions">
 
     <TextView
+        android:id="@+id/questiontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
@@ -21,12 +22,12 @@
         android:layout_marginTop="20dp"
         android:text="@string/Q1"/>
     <ImageView
+        android:id="@+id/question"
         android:layout_width="270px"
         android:layout_height="270px"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:src="@drawable/p_0_cesium"
-        android:id="@+id/question"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_weight="0.01"/>
@@ -36,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:paddingTop="10dp">
 
         <Button
             android:id="@+id/button1"
