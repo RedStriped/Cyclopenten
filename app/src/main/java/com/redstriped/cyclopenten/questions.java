@@ -1,5 +1,6 @@
 package com.redstriped.cyclopenten;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
@@ -21,7 +22,7 @@ public class questions extends AppCompatActivity {
     private int QuestionNo;
     private int AnswerNo;
     private Button btn1, btn2, btn3, btn4;
-    private String[] questions, answers;
+    private String[] questions, answers, answerChoices;
     private List<Integer> oldQuestions;
     private Random rand;
     private ImageView question;
@@ -55,7 +56,11 @@ public class questions extends AppCompatActivity {
 
         String i = "";
         char c;
-
+        if(oldQuestions.size()==questions.length){
+            Intent intent = new Intent(this, finish.class);
+            startActivity(intent);
+            finish();
+        }
         while(oldQuestions.contains(QuestionNo)){
             QuestionNo = rand.nextInt(questions.length);
         }
@@ -66,6 +71,7 @@ public class questions extends AppCompatActivity {
         question.setImageResource(id);
 
         int currentQuestion = QuestionNo * 4;
+        //answerChoices = new String[]{answers[currentQuestion], answers[currentQuestion + 1], answers[currentQuestion+2], answers[currentQuestion+3]};
         btn1.setText(answers[currentQuestion]);
         btn2.setText(answers[currentQuestion+1]);
         btn3.setText(answers[currentQuestion+2]);
