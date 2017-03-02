@@ -24,7 +24,7 @@ public class questions extends AppCompatActivity {
     private Button btn1, btn2, btn3, btn4;
     private String[] questions, answers, answerChoices;
     private List<Integer> oldQuestions;
-    private Random rand;
+    private Random rand, randAnswerChoice;
     private ImageView question;
     private boolean handledClick = false;
 
@@ -33,12 +33,13 @@ public class questions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
         questions = getResources().getStringArray(R.array.Qs);
-        String[] questions2 = Arrays.copyOfRange(questions, 0, 33);
+      //  String[] questions2 = Arrays.copyOfRange(questions, 0, 33);
         answers = getResources().getStringArray(R.array.As);
         oldQuestions = new ArrayList<>();
         QuestionNo = 0;
         AnswerNo = 0;
         rand = new Random();
+        randAnswerChoice = new Random();
 
         btn1 = (Button)findViewById(R.id.button1);
         btn2 = (Button)findViewById(R.id.button2);
@@ -71,11 +72,29 @@ public class questions extends AppCompatActivity {
         question.setImageResource(id);
 
         int currentQuestion = QuestionNo * 4;
-        //answerChoices = new String[]{answers[currentQuestion], answers[currentQuestion + 1], answers[currentQuestion+2], answers[currentQuestion+3]};
-        btn1.setText(answers[currentQuestion]);
-        btn2.setText(answers[currentQuestion+1]);
-        btn3.setText(answers[currentQuestion+2]);
-        btn4.setText(answers[currentQuestion+3]);
+        answerChoices = new String[]{answers[currentQuestion], answers[currentQuestion + 1], answers[currentQuestion+2], answers[currentQuestion+3]};
+
+        int dummy = randAnswerChoice.nextInt(4);
+
+        btn1.setText(answerChoices[dummy]);
+        if(dummy==3){
+            dummy=0;
+        }else{
+            dummy++;
+        }
+        btn2.setText(answerChoices[dummy]);
+        if(dummy==3){
+            dummy=0;
+        }else{
+            dummy++;
+        }
+        btn3.setText(answerChoices[dummy]);
+        if(dummy==3){
+            dummy=0;
+        }else{
+            dummy++;
+        }
+        btn4.setText(answerChoices[dummy]);
 
         findViewById(R.id.tickcross).setVisibility(View.INVISIBLE);
         findViewById(R.id.correctornot).setVisibility(View.INVISIBLE);
