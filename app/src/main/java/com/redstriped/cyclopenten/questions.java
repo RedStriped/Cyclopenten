@@ -62,6 +62,7 @@ public class questions extends AppCompatActivity {
         char c;
         if(oldQuestions.size()==questions.length || lives==0){
             Intent intent = new Intent(this, finish.class);
+            intent.putExtra("won", true);
             startActivity(intent);
             finish();
         }
@@ -155,6 +156,7 @@ public class questions extends AppCompatActivity {
                     live1.setVisibility(View.INVISIBLE);
 
                     Intent intent2 = new Intent(this, finish.class);
+                    intent2.putExtra("won", false);
                     startActivity(intent2);
                     finish();
 
@@ -246,6 +248,7 @@ public class questions extends AppCompatActivity {
      * @param light
      * @param dark
      */
+
     public void ColorConf2(int prim, int light, int dark){
         LinearLayout back = (LinearLayout) findViewById(R.id.activity_questions);
         TextView qtext = (TextView) findViewById(R.id.questiontext);
