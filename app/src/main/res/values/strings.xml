@@ -121,6 +121,19 @@
     <string name="A_thorium">thorium</string>
     <string name="A_uranium">uranium</string>
 
+    <string-array name="Hearts">
+        <item>p0heart</item>
+        <item>p1heart</item>
+        <item>p2heart</item>
+        <item>p3heart</item>
+        <item>p4heart</item>
+        <item>p5heart</item>
+        <item>p6heart</item>
+        <item>p7heart</item>
+        <item>p8heart</item>
+        <item>p9heart</item>
+    </string-array>
+
     <string-array name="Qs">
         <item>p_0_cesium</item>
         <item>p_0_francium</item>
@@ -745,7 +758,7 @@
         <item>scandium</item>
 
         <item>terbium</item>
-        <item>terbium</item>
+        <item>transformium</item>
         <item>tabium</item>
         <item>tilithium</item>
 
@@ -800,7 +813,7 @@
         <item>lyriist</item>
 
         <item>mendelevium</item>
-        <item>mendelevium</item>
+        <item>mandelevium</item>
         <item>malladium</item>
         <item>mupnium</item>
 

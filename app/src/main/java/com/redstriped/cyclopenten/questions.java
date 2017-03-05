@@ -19,13 +19,12 @@ import java.util.Random;
 
 public class questions extends AppCompatActivity {
 
-    private int QuestionNo;
-    private int AnswerNo;
+    private int QuestionNo, AnswerNo, lives;
     private Button btn1, btn2, btn3, btn4;
-    private String[] questions, answers, answerChoices;
+    private String[] questions, answers, answerChoices, hearts;
     private List<Integer> oldQuestions;
     private Random rand, randAnswerChoice;
-    private ImageView question;
+    private ImageView question, live3, live2, live1;
     private boolean handledClick = false;
 
     @Override
@@ -33,11 +32,13 @@ public class questions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
         questions = getResources().getStringArray(R.array.Qs);
+        hearts = getResources().getStringArray(R.array.Hearts);
       //  String[] questions2 = Arrays.copyOfRange(questions, 0, 33);
         answers = getResources().getStringArray(R.array.As);
         oldQuestions = new ArrayList<>();
         QuestionNo = 0;
         AnswerNo = 0;
+        lives = 3;
         rand = new Random();
         randAnswerChoice = new Random();
 
@@ -47,7 +48,9 @@ public class questions extends AppCompatActivity {
         btn4 = (Button)findViewById(R.id.button4);
 
         question = (ImageView) findViewById(R.id.question);
-
+        live3 = (ImageView) findViewById(R.id.live3);
+        live2 = (ImageView) findViewById(R.id.live2);
+        live1 = (ImageView) findViewById(R.id.live1);
         selectQuestion();
         //setBackgroundResource(R.drawable. + questions[QuestionNo]);
 
@@ -57,7 +60,7 @@ public class questions extends AppCompatActivity {
 
         String i = "";
         char c;
-        if(oldQuestions.size()==questions.length){
+        if(oldQuestions.size()==questions.length || lives==0){
             Intent intent = new Intent(this, finish.class);
             startActivity(intent);
             finish();
@@ -70,26 +73,31 @@ public class questions extends AppCompatActivity {
         AnswerNo = (QuestionNo*4);
         int id = getResources().getIdentifier(questions[QuestionNo], "drawable", getPackageName());
         question.setImageResource(id);
-
+        char liveResource = questions[QuestionNo].charAt(2);
+        int heartid = Character.getNumericValue(liveResource);
+        int id2 = getResources().getIdentifier(hearts[heartid], "drawable", getPackageName());
+        live3.setImageResource(id2);
+        live2.setImageResource(id2);
+        live1.setImageResource(id2);
         int currentQuestion = QuestionNo * 4;
         answerChoices = new String[]{answers[currentQuestion], answers[currentQuestion + 1], answers[currentQuestion+2], answers[currentQuestion+3]};
 
         int dummy = randAnswerChoice.nextInt(4);
 
         btn1.setText(answerChoices[dummy]);
-        if(dummy==3){
+        if(dummy>=3){
             dummy=0;
         }else{
             dummy++;
         }
         btn2.setText(answerChoices[dummy]);
-        if(dummy==3){
+        if(dummy>=3){
             dummy=0;
         }else{
             dummy++;
         }
         btn3.setText(answerChoices[dummy]);
-        if(dummy==3){
+        if(dummy>=3){
             dummy=0;
         }else{
             dummy++;
@@ -135,6 +143,22 @@ public class questions extends AppCompatActivity {
                 }, 1000);
                 //QuestionNo += 1;
                 //AnswerNo += 4;
+            } else{
+                lives--;
+                if(lives==2){
+                    live3.setVisibility(View.INVISIBLE);
+                }
+                if(lives==1){
+                    live2.setVisibility(View.INVISIBLE);
+                }
+                if(lives==0){
+                    live1.setVisibility(View.INVISIBLE);
+
+                    Intent intent2 = new Intent(this, finish.class);
+                    startActivity(intent2);
+                    finish();
+
+                }
             }
         }
 
