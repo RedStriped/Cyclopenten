@@ -11,7 +11,7 @@ import com.cyclopenten.redstriped.cyclopenten.R;
  * Created by Malte on 23.02.2017.
  */
 
-public class finish  extends AppCompatActivity {
+public class GameOverActivity extends AppCompatActivity {
 
     private boolean won;
     private TextView tv;

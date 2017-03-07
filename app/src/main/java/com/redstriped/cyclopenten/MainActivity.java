@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSplashPageClick(View view) {
-        Intent intent = new Intent(this, questions.class);
+        Intent intent = new Intent(this, GameActivity.class);
         startActivity(intent);
         finish();
     }

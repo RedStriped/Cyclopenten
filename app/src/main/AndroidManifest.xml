@@ -15,8 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.redstriped.cyclopenten.questions"></activity>
-        <activity android:name="com.redstriped.cyclopenten.finish"></activity>
+        <activity android:name="com.redstriped.cyclopenten.GameActivity"></activity>
+        <activity android:name="com.redstriped.cyclopenten.GameOverActivity"></activity>
     </application>
 
 </manifest>

@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_questions"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/p0Primary"
-    android:orientation="vertical"
-    tools:context="com.redstriped.cyclopenten.questions">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_questions"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:background="@color/p0Primary"
+              android:orientation="vertical"
+              tools:context="com.redstriped.cyclopenten.GameActivity">
 
     <TextView
         android:id="@+id/questiontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
-        android:textColor="@color/p0Accent"
+        android:textColor="@color/p0PrimaryDark"
         android:textSize="30dp"
         android:layout_marginTop="10dp"
         android:text="@string/Q1"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/p0PrimaryDark"
+            android:textSize="90px"
+            android:text="Points: 0"/>
+
         <View
             android:layout_width="0dp"
             android:layout_height="20dp"
@@ -119,21 +128,4 @@
             android:background="@color/p0Accent"
             android:onClick="onSubmitClick"/>
     </LinearLayout>
-    <ImageView
-        android:id="@+id/tickcross"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:src="@drawable/yes"/>
-    <TextView
-        android:id="@+id/correctornot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-thin"
-        android:textColor="@color/p0Accent"
-        android:text="CORRECT!"
-        android:textSize="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"/>
 </LinearLayout>

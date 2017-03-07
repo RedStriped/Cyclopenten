@@ -1,11 +1,9 @@
 package com.redstriped.cyclopenten;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
 import android.support.annotation.RequiresApi;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,19 +11,19 @@ import android.widget.*;
 import com.cyclopenten.redstriped.cyclopenten.R;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class questions extends AppCompatActivity {
+public class GameActivity extends AppCompatActivity {
 
-    private int QuestionNo, AnswerNo, lives;
+    private int QuestionNo, AnswerNo, lives, points;
     private Button btn1, btn2, btn3, btn4;
     private String[] questions, answers, answerChoices, hearts;
     private List<Integer> oldQuestions;
     private Random rand, randAnswerChoice;
     private ImageView question, live3, live2, live1;
     private boolean handledClick = false;
+    private TextView pointsCounter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +31,13 @@ public class questions extends AppCompatActivity {
         setContentView(R.layout.activity_questions);
         questions = getResources().getStringArray(R.array.Qs);
         hearts = getResources().getStringArray(R.array.Hearts);
-      //  String[] questions2 = Arrays.copyOfRange(questions, 0, 33);
+        //  String[] questions2 = Arrays.copyOfRange(GameActivity, 0, 33);
         answers = getResources().getStringArray(R.array.As);
         oldQuestions = new ArrayList<>();
         QuestionNo = 0;
         AnswerNo = 0;
         lives = 3;
+        points = 0;
         rand = new Random();
         randAnswerChoice = new Random();
 
@@ -47,12 +46,13 @@ public class questions extends AppCompatActivity {
         btn3 = (Button)findViewById(R.id.button3);
         btn4 = (Button)findViewById(R.id.button4);
 
+        pointsCounter = (TextView) findViewById(R.id.points);
         question = (ImageView) findViewById(R.id.question);
         live3 = (ImageView) findViewById(R.id.live3);
         live2 = (ImageView) findViewById(R.id.live2);
         live1 = (ImageView) findViewById(R.id.live1);
         selectQuestion();
-        //setBackgroundResource(R.drawable. + questions[QuestionNo]);
+        //setBackgroundResource(R.drawable. + GameActivity[QuestionNo]);
 
     }
 
@@ -61,7 +61,7 @@ public class questions extends AppCompatActivity {
         String i = "";
         char c;
         if(oldQuestions.size()==questions.length || lives==0){
-            Intent intent = new Intent(this, finish.class);
+            Intent intent = new Intent(this, GameOverActivity.class);
             intent.putExtra("won", true);
             startActivity(intent);
             finish();
@@ -105,10 +105,6 @@ public class questions extends AppCompatActivity {
         }
         btn4.setText(answerChoices[dummy]);
 
-        findViewById(R.id.tickcross).setVisibility(View.INVISIBLE);
-        findViewById(R.id.correctornot).setVisibility(View.INVISIBLE);
-
-
         i = questions[QuestionNo];
         c = i.charAt(2);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -131,9 +127,10 @@ public class questions extends AppCompatActivity {
 
             if (answer.equals(correctAnswer)) {
                 handledClick=true;
+                points++;
                 int id = getResources().getIdentifier(questions[QuestionNo] + "2", "drawable", getPackageName());
                 question.setImageResource(id);
-
+                pointsCounter.setText("Points: " + points);
                 final Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
@@ -155,7 +152,7 @@ public class questions extends AppCompatActivity {
                 if(lives==0){
                     live1.setVisibility(View.INVISIBLE);
 
-                    Intent intent2 = new Intent(this, finish.class);
+                    Intent intent2 = new Intent(this, GameOverActivity.class);
                     intent2.putExtra("won", false);
                     startActivity(intent2);
                     finish();
@@ -252,7 +249,6 @@ public class questions extends AppCompatActivity {
     public void ColorConf2(int prim, int light, int dark){
         LinearLayout back = (LinearLayout) findViewById(R.id.activity_questions);
         TextView qtext = (TextView) findViewById(R.id.questiontext);
-        TextView corn = (TextView) findViewById(R.id.correctornot);
 
         back.setBackgroundColor(prim);
         qtext.setTextColor(dark);
@@ -264,7 +260,6 @@ public class questions extends AppCompatActivity {
         btn3.setTextColor(light);
         btn4.setBackgroundColor(dark);
         btn4.setTextColor(light);
-        corn.setTextColor(dark);
-
+        pointsCounter.setTextColor(dark);
     }
 }
