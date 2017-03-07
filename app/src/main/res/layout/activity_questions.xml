@@ -128,4 +128,20 @@
             android:background="@color/p0Accent"
             android:onClick="onSubmitClick"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/p0gear"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.01"/>
+    </LinearLayout>
 </LinearLayout>

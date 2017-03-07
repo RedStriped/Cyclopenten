@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Cyclopenten</string>
     <string name="Q1">Name the chemical element</string>
+    <string name="Highscore"></string>
 
     <string name="A_cesium">cesium</string>
     <string name="A_francium">francium</string>
@@ -132,6 +133,19 @@
         <item>p7heart</item>
         <item>p8heart</item>
         <item>p9heart</item>
+    </string-array>
+
+    <string-array name="Gears">
+        <item>p0gear</item>
+        <item>p1gear</item>
+        <item>p2gear</item>
+        <item>p3gear</item>
+        <item>p4gear</item>
+        <item>p5gear</item>
+        <item>p6gear</item>
+        <item>p7gear</item>
+        <item>p8gear</item>
+        <item>p9gear</item>
     </string-array>
 
     <string-array name="Qs">

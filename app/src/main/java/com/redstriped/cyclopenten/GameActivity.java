@@ -1,6 +1,8 @@
 package com.redstriped.cyclopenten;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Handler;
 import android.support.annotation.RequiresApi;
@@ -18,10 +20,10 @@ public class GameActivity extends AppCompatActivity {
 
     private int QuestionNo, AnswerNo, lives, points;
     private Button btn1, btn2, btn3, btn4;
-    private String[] questions, answers, answerChoices, hearts;
+    private String[] questions, answers, answerChoices, hearts, gears;
     private List<Integer> oldQuestions;
     private Random rand, randAnswerChoice;
-    private ImageView question, live3, live2, live1;
+    private ImageView question, live3, live2, live1, options;
     private boolean handledClick = false;
     private TextView pointsCounter;
 
@@ -31,7 +33,8 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_questions);
         questions = getResources().getStringArray(R.array.Qs);
         hearts = getResources().getStringArray(R.array.Hearts);
-        //  String[] questions2 = Arrays.copyOfRange(GameActivity, 0, 33);
+        gears = getResources().getStringArray(R.array.Gears);
+
         answers = getResources().getStringArray(R.array.As);
         oldQuestions = new ArrayList<>();
         QuestionNo = 0;
@@ -47,12 +50,13 @@ public class GameActivity extends AppCompatActivity {
         btn4 = (Button)findViewById(R.id.button4);
 
         pointsCounter = (TextView) findViewById(R.id.points);
+        options = (ImageView) findViewById(R.id.options);
         question = (ImageView) findViewById(R.id.question);
         live3 = (ImageView) findViewById(R.id.live3);
         live2 = (ImageView) findViewById(R.id.live2);
         live1 = (ImageView) findViewById(R.id.live1);
         selectQuestion();
-        //setBackgroundResource(R.drawable. + GameActivity[QuestionNo]);
+
 
     }
 
@@ -61,8 +65,11 @@ public class GameActivity extends AppCompatActivity {
         String i = "";
         char c;
         if(oldQuestions.size()==questions.length || lives==0){
+            saveScore();
             Intent intent = new Intent(this, GameOverActivity.class);
-            intent.putExtra("won", true);
+            Bundle extras = new Bundle();
+            extras.putBoolean("won", true);
+            intent.putExtras(extras);
             startActivity(intent);
             finish();
         }
@@ -77,6 +84,8 @@ public class GameActivity extends AppCompatActivity {
         char liveResource = questions[QuestionNo].charAt(2);
         int heartid = Character.getNumericValue(liveResource);
         int id2 = getResources().getIdentifier(hearts[heartid], "drawable", getPackageName());
+        int id3 = getResources().getIdentifier(gears[heartid], "drawable", getPackageName());
+        options.setImageResource(id3);
         live3.setImageResource(id2);
         live2.setImageResource(id2);
         live1.setImageResource(id2);
@@ -120,9 +129,7 @@ public class GameActivity extends AppCompatActivity {
             Button pressedBtn = (Button) view;
             String answer = pressedBtn.getText().toString();
             answer.toLowerCase();
-            //for debug clear later
-       /* Toast toasty = Toast.makeText(getApplicationContext(), answers[AnswerNo], Toast.LENGTH_SHORT);
-        toasty.show();*/
+
             String correctAnswer = answers[AnswerNo];
 
             if (answer.equals(correctAnswer)) {
@@ -139,8 +146,7 @@ public class GameActivity extends AppCompatActivity {
                         selectQuestion();
                     }
                 }, 1000);
-                //QuestionNo += 1;
-                //AnswerNo += 4;
+
             } else{
                 lives--;
                 if(lives==2){
@@ -151,9 +157,13 @@ public class GameActivity extends AppCompatActivity {
                 }
                 if(lives==0){
                     live1.setVisibility(View.INVISIBLE);
+                    saveScore();
 
                     Intent intent2 = new Intent(this, GameOverActivity.class);
-                    intent2.putExtra("won", false);
+                    Bundle extras = new Bundle();
+                    extras.putBoolean("won", false);
+                    extras.putInt("points", points);
+                    intent2.putExtras(extras);
                     startActivity(intent2);
                     finish();
 
@@ -261,5 +271,17 @@ public class GameActivity extends AppCompatActivity {
         btn4.setBackgroundColor(dark);
         btn4.setTextColor(light);
         pointsCounter.setTextColor(dark);
+    }
+
+    public void saveScore(){
+       SharedPreferences sharedPref = getSharedPreferences("highscore", Context.MODE_PRIVATE);
+
+       SharedPreferences.Editor editor = sharedPref.edit();
+       int oldHighscore = sharedPref.getInt("highscore", 0);
+
+       if(points>oldHighscore) {
+           editor.putInt("highscore", points);
+           editor.apply();
+       }
     }
 }
